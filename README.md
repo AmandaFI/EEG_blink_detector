@@ -1,4 +1,4 @@
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/353537072.svg)](https://zenodo.org/badge/latestdoi/353537072)
 
 # EEG_blink_detector
