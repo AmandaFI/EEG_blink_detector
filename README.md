@@ -1,4 +1,5 @@
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[![DOI](https://zenodo.org/badge/353537072.svg)](https://zenodo.org/badge/latestdoi/353537072)
 
 # EEG_blink_detector
 An Algorithm using CNN (convolutional Neural Network) for detecting blink pattern in EEG signal. The Network training code, data cleaning and preparation used for this study are available in this repository and are part of the paper "..." TO BE PUBLISHED 
