@@ -5,20 +5,20 @@ from time import time
 def on_click(x,y, button,pressed):
     if pressed and button == Button.left:
         logging.info(str(time()) + ',1')
-        print('Piscada registrada.')
+        print('Blink registered.')
     elif pressed and button == Button.right:
         logging.info('Erro,0')
-        print('Piscada anterior anulada.')
+        print('Previous blink canceled.')
 
 def on_scroll(x,y,dx,dy):
     listener.stop()
-    print('Experimento encerrado.')
+    print('Experiment ended.')
 
-name = input('Digite seu nome: ')
+name = input('Type your name: ')
 fileName = name + '_labels' + '.csv'
-print('Experimento iniciado.')
-print('Aperte o botão esquerdo do mouse para registrar uma piscada e o botão direito para anular a última piscada registrada.')
-print('Role o scroll do mouse para encerrar.')
+print('Experiment started.')
+print('Press the left mouse button to register a blink and the right mouse button to cancel the last blink registered.')
+print('Scroll the mouse to end the experiment.')
 
 file = open(fileName,'w')
 file.write('blinks\n')
