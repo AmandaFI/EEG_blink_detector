@@ -5,38 +5,38 @@ from time import time
 def on_release(key):
     if key == keyboard.Key.up:
         logging.info(str(time()) + ',1')
-        print('Piscada.')
+        print('Blink.')
     elif key == keyboard.Key.right:
         logging.info(str(time()) + ',2')
-        print('Piscada olho direito.')
+        print('Right eye blink.')
     elif key == keyboard.Key.left:
         logging.info(str(time()) + ',3')
-        print('Piscada olho esquerdo.')
+        print('Left eye blink..')
     elif key == keyboard.Key.space:
         logging.info(str(time()) + ',4')
-        print('Olhos forçados.')
+        print('Pressed eyes.')
     elif key == keyboard.Key.shift:
         logging.info(str(time()) + ',5')
-        print('Outra ação.')
+        print('Other action.')
     elif key == keyboard.Key.backspace:
-        print('Ação anteriror anulada.')
+        print('Previous action canceled.')
         logging.info('Erro,0')
     elif key == keyboard.Key.esc:
-        print('Experimento encerrado.')
+        print('Experiment ended.')
         key_listener.stop()
 
 
-name = input('Digite seu nome: ')
+name = input('Type your name: ')
 fileName = name + '_labels' + '.csv'
-print('Experimento iniciado.')
-print('Aperte para registrar:')
-print('Seta para cima = piscada')
-print('Seta para direita = piscada somente no olho direito')
-print('Seta para esquerda = piscada somente no olho esquerdo')
-print('Barra de espaço = forçar os olhos')
+print('Experiment started.')
+print('Press to register:')
+print('Up arrow = blink')
+print('Right arrow = right eye blink')
+print('Left arrow = light eye blink')
+print('Space bar = pressed eyes')
 print('Shift = ')
-print('Backspace = anular o último registro feito')
-print('Aperte Esc para encerrar.')
+print('Backspace = cancel the last resgister')
+print('Press Esc to end the experiment.')
 
 file = open(fileName,'w')
 file.write('blinks\n')
